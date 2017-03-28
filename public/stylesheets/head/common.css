@@ -1,0 +1,40 @@
+*{
+    padding:0;
+    margin:0;
+}
+*,:before,:after{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body{
+
+}
+a, dd, div, dl, i, img, input, li, p, span, ul {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+ul,li{
+    list-style:none;
+}
+dl,dd{
+    margin:0;padding:0;
+}
+header,main,article,aside,footer,section{
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+
+/* --------------Selection Color-------------- */
+::-moz-selection {
+    background:#05c3c0;
+    color: #fff;
+}
+::selection {
+    background:#05c3c0;
+    color: #fff;
+}

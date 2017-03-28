@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta content="email=no" name="format-detection">
+    <link href="/stylesheets/head/common.css" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/head/navbar.css" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/head/components.css" rel="stylesheet" type="text/css">
+    <script src="/javascripts/head/jquery-2.1.1.min.js"></script>
+    <!--<script src="js/rem_fontsize.js"></script>-->
+    <script src="/javascripts/head/header.js"></script>
+</head>
+<body class="fullwidth">
+<!-- 屏幕小于527px时 ，导航条-->
+<div class="gc_wrapper">
+    <header id="header" class="header-section header-fw-menu">
+        <div class="boxed-header container">
+            <div id="header_logo_bar" class="header-logo-section navbar">
+               <div class="container">
+                   <div id="blue-logo" class="nav-logo">
+                       <a class="link-logo" href="/">
+                           <img class="img-responsive" src="/images/head/logo.png">
+                       </a>
+                   </div>
+                   <div id="blue-bar" class="nav-bar">
+                       <ul class="navbar-list nav-right">
+                           <li class="navbar-item header-nav-item">
+                               <a href="#" class="link-img">
+                                   <i class="icon icon_notice"></i>
+                                   <div class="badge-container">
+                                       <span class="badge">7</span>
+                                   </div>
+                               </a>
+                           </li>
+
+                           <li class="navbar-item header-nav-item">
+                               <a href="javascript:void(0)" class="link-img">
+                                   <span id="loginlist" class="icon icon_usr">
+                                       <dl class="submenu">
+                                           <dd>
+                                               <a href="/register" class="reg-btn">注册</a>|
+                                               <a href="/login" class="login-btn">登录</a>
+                                           </dd>
+                                           <dd>
+                                               <a href="">
+                                                   <i class="usr-icon"></i>个人主页
+                                               </a>
+                                           </dd>
+                                           <dd>
+                                               <a href="">
+                                                   <i class=""></i>账号设置
+                                               </a>
+                                           </dd>
+                                       </dl>
+                                   </span>
+                               </a>
+                           </li>
+                           <li class="navbar-item header-nav-item">
+                               <a href="#" class="link-img">
+                                   <span class="icon icon_mobile">
+                                       <dl>
+                                           <i class="top-icon"></i>
+                                           <dd></dd>
+                                       </dl>
+                                   </span>
+                               </a>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+            </div>
+            <!--  .header-section-->
+            <div id="header_main_wrapper" class="header-main-wrapper header-sticky">
+                <input type="checkbox" id="mini_nav_menustate" class="mini-menu-state">
+                <div id="header_main" class="header-main-section navbar">
+                    <div class="container">
+                        <ul id="mini_menu_trigger" class="main-barlist navbar-left mini-nav">
+                            <li class="menu-item menuicon">
+                                <label for="mini_nav_menustate" class="menuicon-label">
+                                    <span class="menuicon-bread menuicon-bread-top">
+                                        <span class="menuicon-bread-crust menuicon-bread-crust-top"></span>
+                                    </span>
+                                    <span class="menuicon-bread menuicon-bread-bottom">
+                                        <span class="menuicon-bread-crust menuicon-bread-crust-bottom"></span>
+                                    </span>
+                                </label>
+                            </li>
+                        </ul>
+                        <div class="mini-full-wrapper">
+                            <div class="mini-full-inner">
+                                <div id="mini_nav_container" class="mini-nav container ">
+                                    <ul id="mini_main_menu" class="mini-main-nav">
+                                        <input class="mini-nav-state" type="checkbox" id="mini_nav_state_home">
+                                        <li class="mini-menu-item ">
+                                            <label for="mini_nav_state_home">
+                                                <span class="mini-dropdown-toggle"></span>
+                                            </label>
+                                            <a href="">首页</a>
+                                            <ul class="mini-sub-nav">
+                                                <li class="mini-menu-item mini-sub-item">
+                                                    <a href>Home-1</a>
+                                                </li>
+                                                <li class="mini-menu-item mini-sub-item">
+                                                    <a href>Home-2</a>
+                                                </li>
+                                                <li class="mini-menu-item mini-sub-item">
+                                                    <a href>Home-3</a>
+                                                </li>
+                                                <li class="mini-menu-item mini-sub-item">
+                                                    <a href>Home-4</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <input class="mini-nav-state" type="checkbox" id="mini_nav_state_curse">
+                                        <li class="mini-menu-item">
+                                            <label for="mini_nav_state_curse">
+                                                <span class="mini-dropdown-toggle"></span>
+                                            </label>
+                                            <a href="##">课程</a>
+                                            <ul class="mini-sub-nav">
+                                                <li class="mini-menu-item mini-sub-item">
+                                                    <a href>Home-1</a>
+                                                </li>
+                                                <li class="mini-menu-item mini-sub-item">
+                                                    <a href>Home-2</a>
+                                                </li>
+                                                <li class="mini-menu-item mini-sub-item">
+                                                    <a href>Home-3</a>
+                                                </li>
+                                                <li class="mini-menu-item mini-sub-item">
+                                                    <a href>Home-4</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <input class="mini-nav-state" type="checkbox" id="mini_nav_state_resource">
+                                        <li class="mini-menu-item ">
+                                            <label for="mini_nav_state_resource">
+                                                <span class="mini-dropdown-toggle"></span>
+                                            </label>
+                                            <a href="">教学资源</a>
+                                            <ul class="mini-sub-nav">
+                                                <li class="mini-menu-item mini-sub-item">
+                                                    <a href>Home-1</a>
+                                                </li>
+                                                <li class="mini-menu-item mini-sub-item">
+                                                    <a href>Home-2</a>
+                                                </li>
+                                                <li class="mini-menu-item mini-sub-item">
+                                                    <a href>Home-3</a>
+                                                </li>
+                                                <li class="mini-menu-item mini-sub-item">
+                                                    <a href>Home-4</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <input class="mini-nav-state" type="checkbox" id="mini_nav_state_forum">
+                                        <li class="mini-menu-item ">
+                                            <label for="mini_nav_state_forum">
+                                                <span class="mini-dropdown-toggle"></span>
+                                            </label>
+                                            <a href="">Blue社区</a>
+                                            <ul class="mini-sub-nav">
+                                                <li class="mini-menu-item mini-sub-item">
+                                                    <a href>BBS-1</a>
+                                                </li>
+                                                <li class="mini-menu-item mini-sub-item">
+                                                    <a href>BBS-2</a>
+                                                </li>
+                                                <li class="mini-menu-item mini-sub-item">
+                                                    <a href>BBS-3</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <ul id="main_menu" class="navbar-left main-barlist">
+                            <li class="menu-item dropdown ">
+                                <a href="/">
+                                    首页
+                                </a>
+                            </li>
+                            <li class="menu-item dropdown">
+                                <a href="">
+                                    课程<span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu sub-nav">
+                                    <li class="sub-item">
+                                        <a href="">Home-1</a>
+                                    </li>
+                                    <li class="sub-item">
+                                        <a href="">Home-2</a>
+                                    </li>
+                                    <li class="sub-item">
+                                        <a href="">Home-3</a>
+                                    </li>
+                                    <li class="sub-item">
+                                        <a href="">Home-4</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item dropdown">
+                                <a href="">
+                                    教学资源<span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu sub-nav">
+                                    <li class="sub-item">
+                                        <a href="">Home-1</a>
+                                    </li>
+                                    <li class="sub-item">
+                                        <a href="">Home-2</a>
+                                    </li>
+                                    <li class="sub-item">
+                                        <a href="">Home-3</a>
+                                    </li>
+                                    <li class="sub-item">
+                                        <a href="">Home-4</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item dropdown">
+                                <a href="">
+                                    Blue社区
+                                </a>
+                            </li>
+
+                        </ul>
+                        <ul class="navbar-right main-barlist">
+                            <li id="search_trigger" class="menu-item item-search-toggle search-trigger">
+                                <i class="search-icon"></i>
+                            </li>
+                        </ul>
+                        <!--searchbox-->
+                        <div id="search_box" class="search-box">
+                            <i id="search_close_trigger" class="close-icon"></i>
+                            <div class="icon-box">
+                                <i class="search-icon"></i>
+                            </div>
+                            <input id="java_search_header" placeholder="搜索课程、问答">
+                            <div class="tag-box">
+                                <a href="##">Java</a>
+                                <a href="##">JavaEE</a>
+                                <a href="##">HTML5</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+
+<script>
+    $(function () {
+        $.ajax({
+            type:'get',
+            url:'/get_power',
+            data:{},
+            dataType:'json',
+            success:function (result) {
+//                console.log(result.power);
+                if(result.power == 1){
+                    $('#main_menu').append('   <li class="menu-item dropdown">'+
+                            '<a href="">'+
+                            '管理系统'+
+                            '</a>'+
+                            '</li>');
+                    $('#mini_main_menu').append('<input class="mini-nav-state" type="checkbox" id="mini_nav_state_forum">'+
+                            '<li class="mini-menu-item ">'+
+                            '<label for="mini_nav_state_forum">'+
+                            '<span class="mini-dropdown-toggle"></span>'+
+                            '</label>'+
+                            '<a href="">管理系统</a>'+
+                            '<ul class="mini-sub-nav">'+
+                            '</ul>'+
+                            '</li>')
+                }
+
+            }
+
+        })
+    })
+</script>
+</body>
+</html>
