@@ -55,14 +55,25 @@
     <div class="confirm">确认</div>
 </div>
 <script>
+    function MathRand()
+    {
+        var Num="";
+        for(var i=0;i<8;i++)
+        {
+            Num+=Math.floor(Math.random()*10);
+        }
+        return Num;
+    };
+
     $('.confirm').click(function () {
         var tele = $('#tele').val();
         var name = $('#name').val();
         var pass = $('#pass').val();
+        var user_id = MathRand();
         $.ajax({
             type:'post',
             url:'/register',
-            data:{tel:tele,name:name,pass:pass},
+            data:{tel:tele,name:name,pass:pass,user_id:user_id},
             dataType:'json',
             success:function (result) {
                 if(result.text == 'yes'){

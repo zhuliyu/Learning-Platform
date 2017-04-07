@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/stylesheets/head/components.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+<%include ../head2.html%>
+<div>
+    <form action="">
+        <input type="text" placeholder="标题" class="title"><br>
+        <textarea name="" id="" cols="30" rows="10" class="content"></textarea>
+    </form>
+    <div class="submit">提交</div>
+</div>
+
+<script>
+    Date.prototype.Format = function (fmt) { //author: meizz
+        var o = {
+            "M+": this.getMonth() + 1, //月份
+            "d+": this.getDate(), //日
+            "h+": this.getHours(), //小时
+            "m+": this.getMinutes(), //分
+            "s+": this.getSeconds(), //秒
+            "q+": Math.floor((this.getMonth() + 3) / 3), //季度
+            "S": this.getMilliseconds() //毫秒
+        };
+        if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+        for (var k in o)
+            if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+        return fmt;
+    };
+    function MathRand()
+    {
+        var Num="";
+        for(var i=0;i<6;i++)
+        {
+            Num+=Math.floor(Math.random()*10);
+        }
+        return Num;
+    };
+    $('.submit').click(function () {
+        var title = $('.title').val();
+        var content = $('.content').val();
+        var time1=new Date().Format('yyyy/MM/dd hh:mm:ss');
+        var id=MathRand();
+        $.ajax({
+            type:'post',
+            url:'/square/save',
+            data:{title:title,content:content,time:time1,id:id},
+            dataType:'json',
+            success:function (result) {
+                if(result.result == 'ok'){
+                    location.href='/square'
+                }
+            }
+        })
+    })
+</script>
+</body>
+</html>

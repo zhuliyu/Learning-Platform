@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/stylesheets/head/components.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+        .square-logo{
+            background-color: whitesmoke;
+            height:4rem;
+            margin-top: 2rem;
+            width:100%;
+            margin-left: -10px;
+        }
+        .square-info{
+            height:60rem;
+            background-color: whitesmoke;
+            margin-top: 2rem;
+
+
+        }
+        .square-logo-left{
+            width:50%;
+            height:100%;
+            line-height: 4rem;
+            text-align: left;
+            font-size: 1.3rem;
+            font-family: 黑体;
+            float: left;
+            margin-left: 1rem;
+        }
+        .square-logo-right{
+            width:18%;
+            height:2rem;
+            background-color: #03a9f4;
+            float: right;
+            color:white;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            margin-right: 2rem;
+            line-height: 2rem;
+            text-align: center;
+        }
+        .square-logo-right:hover{
+            cursor: pointer;
+        }
+        .square-content{
+            width:100%;
+            height:auto;
+            border-bottom: solid 1px whitesmoke;
+            border-top:solid 1px whitesmoke;
+            margin-top: 2rem;
+            margin-left: -10px;
+            display: inline-block;
+        }
+        .square-content-left{
+            width:2.5rem;
+            height:2.5rem;
+            float: left;
+            margin-top: 1rem;
+            /*border:solid 1px red;*/
+            background-color: #f01400;
+            text-align: center;
+            text-align: center;
+            line-height: 2.5rem;
+            color:white;
+            font-size: 0.9rem;
+        }
+        .square-content-right{
+            width:88%;
+            height:100%;
+            /*border:solid 1px red;*/
+            float:left;
+        }
+        @media only screen and (max-width:992px){
+            .square-info{
+                display:none;
+            }
+        }
+        .square-content-right-info{
+            width:98%;
+            height:auto;
+            margin-top: 1rem;
+            /*border:solid 1px blue;*/
+            padding-left: 0.8rem;
+
+        }
+        .square-content-right-answer{
+            width:100%;
+            height:auto;
+            margin-top: 1rem;
+            /*border:solid 1px blue;*/
+            padding-left: 0.8rem;
+        }
+        .square-content-right-answer-p{
+            height:1rem;
+            width:auto;
+            font-size: 0.8rem;
+            float: left;
+        }
+        .square-content-right-answerInfo{
+            width:100%;
+            height:auto;
+            padding-left: 0.8rem;
+            /*border:solid 1px red;*/
+            font-size: 0.8rem;
+
+        }
+        .square-content-right-bottom{
+            width:100%;
+            height:2rem;
+            /*border:solid 1px red;*/
+            margin-top: 1rem;
+            padding-left: 0.8rem;
+        }
+        .square-content-right-bottom-zan{
+            width:3.5rem;
+            height:1.5rem;
+            border: solid 1px #b8b8b8;
+            font-size: 0.8rem;
+            text-align: center;
+            line-height: 1.5rem;
+            float: left;
+        }
+        .square-content-right-bottom-fan{
+            width:3.5rem;
+            height:1.5rem;
+            /*border: solid 1px #b8b8b8;*/
+            font-size: 0.8rem;
+            text-align: center;
+            line-height: 1.5rem;
+            float: left;
+            margin-left: 1rem;
+        }
+    </style>
+</head>
+<body>
+<%include ../head2.html%>
+<div class="container">
+    <div class="row">
+        <div class="col-md-18 col-sm-24 col-xs-24" style="">
+
+            <div class="square-logo">
+                <div class="square-logo-left ">发出你的声音</div>
+                <div class="square-logo-right">提问</div>
+            </div>
+
+            <div class="square-content">
+                <div class="square-content-left">java</div>
+                <div class="square-content-right">
+                    <div class="square-content-right-info"><b>喜欢java但不知道选择什么专业</b></div>
+                    <div class="square-content-right-answer">
+                        <div class="square-content-right-answer-p"><b>雨微凉ing</b></div><div style="font-size: 0.6rem;color: #969696;height:1rem;line-height: 1rem">回答:</div>
+                    </div>
+                    <div class="square-content-right-answerInfo"> String s1 = new String("abc"); 生成了常量池中的“adc” 和堆空间中的字符串对象。 String s2 = s1.intern(); 这一行的作用是s1对象去常量池中寻找后发现"abc"已经存在于常量池中了。 然后生成一个s2的引用指向常量池中的“abc”对象。结果就是 s1 和 s2 的引用地址明显不同。因此返回了false。String s3 = "123";     这一行代码会直接去常量池中创建 String s4 = s3.intern();  发现"123"已经在常量池存在 直接引用指向常量池“123”对象结果就是s3 和s4 的引用地址相同 返回</div>
+                    <div class="square-content-right-bottom">
+                        <div class="square-content-right-bottom-zan">赞同</div>
+                        <div class="square-content-right-bottom-fan">反对</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="square-info col-md-6 col-sm-1 col-xs-1"></div>
+
+    </div>
+
+
+</div>
+
+<script>
+    $('.square-logo-right').click(function () {
+        $.ajax({
+            type:'get',
+            url:'/get_name',
+            data:{},
+            dataType:'json',
+            success:function (result) {
+                if(result.name != null){
+                    location.href='/square/save'
+                }else{
+                    location.href='/login'
+                }
+//                console.log(result.name)
+
+            }
+        })
+    })
+</script>
+</body>
+</html>
